@@ -1,0 +1,30 @@
+{
+  "name": "astrochimp",
+  "version": "0.0.1",
+  "description": "Tiny MailChimp list subscribe utility.",
+  "source": "index.js",
+  "module": "dist/astrochimp.es.js",
+  "main": "dist/astrochimp.js",
+  "umd:main": "dist/astrochimp.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle build",
+    "watch": "microbundle watch",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estrattonbailey/astrochimp.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/astrochimp/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/astrochimp#readme",
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  }
+}
