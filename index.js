@@ -8,7 +8,7 @@ function encode (o) {
     qs.push(`${keys[i]}=${o[keys[i]]}`)
   }
 
-  return encodeURI(qs.join('&'))
+  return encodeURIComponent(qs.join('&'))
 }
 
 export default function astrochimp (url, data, done) {
