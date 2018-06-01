@@ -5,10 +5,12 @@ function encode (o) {
   let qs = []
 
   for (let i = 0; i < keys.length; i++) {
-    qs.push(`${keys[i]}=${o[keys[i]]}`)
+    qs.push(
+      encodeURIComponent(keys[i]) + '=' + encodeURIComponent(o[keys[i]])
+    )
   }
 
-  return encodeURIComponent(qs.join('&'))
+  return qs.join('&')
 }
 
 export default function astrochimp (url, data, done) {
