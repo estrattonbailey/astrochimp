@@ -1,6 +1,6 @@
 {
   "name": "astrochimp",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Tiny MailChimp list subscribe utility.",
   "source": "index.js",
   "module": "dist/astrochimp.es.js",
